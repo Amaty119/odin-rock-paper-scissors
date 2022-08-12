@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel  = "stylesheet" href = "./style.css">
+    <script src = "javascript.js"></script>
+</head>
+<body>
+    <div class = "header">
+        Rock, Paper, Scissors
+    </div>
+
+    <div class = "subheader">
+        First to score 5 points wins
+    </div>
+
+    <div class = "icons">
+        <div class = "iconimg">
+            <div class = "player">❔</div>
+            <p class = "playerScore">0</p>
+        </div>
+
+        <div class = "iconimg">
+            <div class = "computer">❔</div>
+            <p class = "computerScore">0</p>
+        </div>
+    </div>
+    
+
+    <div class = "buttons">
+        <button class = "button" onclick = "playRound(0, getComputerChoice())">
+            ✊
+        </button>
+        <button class = "button" onclick = "playRound(1, getComputerChoice())">
+            ✋
+        </button>
+        <button class = "button" onclick = "playRound(2, getComputerChoice())">
+            ✌️
+        </button>
+    </div>
+
+    <button class = restart onclick = "restart()"></button>
+
+    <div class = "footer">
+        Created by Amy Kim
+    </div>
+</body>
+</html>
